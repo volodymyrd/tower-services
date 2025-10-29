@@ -1,0 +1,28 @@
+[workspace]
+
+members = ["limit", "test-utils"]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.0.1"
+authors = ["Volodymyr Dotsenko <volodymyrdotsenko@gmail.com>"]
+repository = "https://github.com/volodymyrd/tower-services"
+homepage = "https://github.com/volodymyrd/tower-services"
+license = "Apache-2.0"
+edition = "2024"
+
+[workspace.dependencies]
+futures = "0.3.22"
+futures-core = "0.3.22"
+futures-util = { version = "0.3.22", default-features = false }
+pin-project-lite = "0.2.7"
+tokio = "1.6.2"
+tokio-stream = "0.1.1"
+tokio-test = "0.4"
+tokio-util = { version = "0.7.0", default-features = false }
+tower = "0.5.2"
+tower-services-test-utils = { path = "./test-utils" }
+tower-test = "0.4.0"
+tracing = { version = "0.1.2", default-features = false }
+tracing-subscriber = { version = "0.3", default-features = false }

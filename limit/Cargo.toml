@@ -1,0 +1,14 @@
+[package]
+name = "tower-services-limit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["macros", "sync", "test-util", "rt-multi-thread"] }
+tokio-test = { workspace = true }
+tower = { workspace = true, features = ["limit"] }
+tower-test = { workspace = true }
+tracing = { workspace = true, features = ["std"] }
+tracing-subscriber = { workspace = true, features = ["fmt", "ansi"] }
